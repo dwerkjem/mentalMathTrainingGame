@@ -8,10 +8,10 @@ I would like to start this document by saying please contribute if you are inter
 
 ### Style Guide
 
-#### In Code 
+#### In Code
 
 Use prettier code style for all other rules follow [Guidelines for writing code examples](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide) from [MDN](https://developer.mozilla.org/en-US/)
 
 #### In Docs
 
-General documentation should adhere to the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html) see the [link](https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html) 
+General documentation should adhere to the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html) see the [link](https://www.chicagomanualofstyle.org/book/ed18/frontmatter/toc.html)
