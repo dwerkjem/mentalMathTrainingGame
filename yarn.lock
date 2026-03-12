@@ -7,6 +7,11 @@ git-format-staged@^4.0.1:
   resolved "https://registry.npmjs.org/git-format-staged/-/git-format-staged-4.0.1.tgz"
   integrity sha512-8C9Bw4VtZxa+VNMGh8Og8qG+rH527q+8un1SKpVgo3ZZXTCGI/U9a6oyJAFlfkeYFrOh7rTWWfH1NbL+63Sttw==
 
+husky@^9.1.7:
+  version "9.1.7"
+  resolved "https://registry.npmjs.org/husky/-/husky-9.1.7.tgz"
+  integrity sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==
+
 prettier@3.8.1:
   version "3.8.1"
   resolved "https://registry.npmjs.org/prettier/-/prettier-3.8.1.tgz"
