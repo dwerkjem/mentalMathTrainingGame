@@ -3,9 +3,14 @@
   "description": "A website made to measure and grow mental math skills in a fun and engaging way!",
   "bugs": "https://github.com/dwerkjem/mentalMathTrainingGame/issues",
   "license": "GPL-3.0-only",
-  "repository": { 
+  "repository": {
     "type": "git",
-    "url": "https://github.com/dwerkjem/mentalMathTrainingGame" 
-    },
-    "files": ["src/"]    
+    "url": "https://github.com/dwerkjem/mentalMathTrainingGame"
+  },
+  "files": [
+    "src/"
+  ],
+  "devDependencies": {
+    "prettier": "3.8.1"
+  }
 }
