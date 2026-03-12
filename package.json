@@ -11,12 +11,13 @@
     "src/"
   ],
   "devDependencies": {
+    "git-format-staged": "^4.0.1",
     "prettier": "3.8.1"
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky"
   }
 }
