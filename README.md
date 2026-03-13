@@ -6,4 +6,4 @@ The primary goal is to make way for users to quantify their mental math skills a
 
 ## Contributing
 
-See [contributing](docs/contributing.md) for full details, but essentially, **don't use generative AI** for this project, and be sure to read through the guidelines found in [contributing](docs/contributing.md)
+See [contributing](docs/contributing.md).

@@ -6,6 +6,10 @@ I would like to start this document by saying please contribute if you are inter
 
 ## Guidelines and Best Practices
 
+### AI Code Policy
+
+I don't want 100% Ai code in fact if you use AI please be sure to manually review the generated code.
+
 ### Style Guide
 
 #### In Code
