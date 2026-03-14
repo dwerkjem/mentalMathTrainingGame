@@ -12,6 +12,7 @@ jobs:
       - run: |
           yarn
           yarn prettier . --write
+          git add .
       - uses: autofix-ci/action@v1
         with:
           commit-message: "Apply Prettier format"
