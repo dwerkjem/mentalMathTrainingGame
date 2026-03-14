@@ -14,6 +14,7 @@ export default defineConfig([
     "eslint.config.mjs",
     "next.config.ts",
     "postcss.config.mjs",
+    "react/**",
   ]),
   {
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
