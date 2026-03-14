@@ -11,16 +11,26 @@
     "src/"
   ],
   "devDependencies": {
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
     "git-format-staged": "^4.0.1",
-    "prettier": "3.8.1"
+    "husky": "^8.0.0",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1"
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky && husky install"
   },
-  "dependencies": {
-    "husky": "^9.1.7"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
