@@ -6,7 +6,7 @@ The primary goal is to make way for users to quantify their mental math skills a
 
 ## Contributing
 
-See [contributing](docs/contributing.md).
+See [contributing](docs/developmentDocs/contributing.md).
 
 ## Instillation
 
