@@ -1,0 +1,24 @@
+services:
+  mongo:
+    image: mongo:noble
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "${MONGO_PORT:-27017}:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${ROOT_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${ROOT_PASSWORD}
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://${ROOT_USER}:${ROOT_PASSWORD}@mongo:27017/${MONGO_DB_NAME}?authSource=admin
+      ME_CONFIG_BASICAUTH_ENABLED: "true"
+      ME_CONFIG_BASICAUTH_USERNAME: ${MONGO_BASIC_USERNAME}
+      ME_CONFIG_BASICAUTH_PASSWORD: ${MONGO_BASIC_PASSWORD}
