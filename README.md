@@ -66,15 +66,3 @@ update-system
 ```bash
 nix run github:nix-community/home-manager -- switch --flake $HOME/nix-config#$USER
 ```
-
-##### PostgreSQL Password Setup
-
-The PostgreSQL configuration in this flake uses a password for authentication. To set the password, create a file at `~/.config/postgresql/role-password` with the desired password and set the permissions to 600:
-
-```bash
-PASSWORD='your-strong-password-here'
-mkdir -p ~/.config/postgresql
-chmod 700 ~/.config/postgresql
-printf '%s\n' "$PASSWORD" > ~/.config/postgresql/role-password
-chmod 600 ~/.config/postgresql/role-password
-```
