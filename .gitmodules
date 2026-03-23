@@ -1,0 +1,3 @@
+[submodule "nix-config"]
+	path = nix-config
+	url = git@github.com:dwerkjem/nix-config.git
