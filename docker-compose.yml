@@ -9,6 +9,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${ROOT_USER}
       MONGO_INITDB_ROOT_PASSWORD: ${ROOT_PASSWORD}
+    networks:
+      - mongo-network
 
   mongo-express:
     image: mongo-express
@@ -22,3 +24,19 @@ services:
       ME_CONFIG_BASICAUTH_ENABLED: "true"
       ME_CONFIG_BASICAUTH_USERNAME: ${MONGO_BASIC_USERNAME}
       ME_CONFIG_BASICAUTH_PASSWORD: ${MONGO_BASIC_PASSWORD}
+    networks:
+      - mongo-network
+
+  rclone:
+    image: rclone/rclone:latest
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ${RCLONE_CONFIG_PATH:-./rclone/rclone.conf}:/config/rclone/rclone.conf:ro
+    command: ["config", "show"]
+    networks:
+      - mongo-network
+
+networks:
+  mongo-network:

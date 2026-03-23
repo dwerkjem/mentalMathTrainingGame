@@ -1,4 +1,4 @@
 {
-  "cSpell.words": ["venv"],
+  "cSpell.words": ["rclone", "venv"],
   "js/ts.tsdk.path": "node_modules/typescript/lib"
 }

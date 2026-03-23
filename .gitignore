@@ -265,3 +265,6 @@ sketch
 
 db-data
 pgadmin-data
+
+# Rclone configuration file
+rclone.conf
